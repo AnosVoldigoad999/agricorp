@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+ background-color: #28263A ;
+ font-family: pop;
+ display: flex;
+ flex-direction: column;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+@font-face {
+  font-family: pop;
+  src: url(../public/poppins/Poppins-Regular.ttf);
+}
+nav{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #41BD4F;
+  width: 100%;
+  height: 10vh;
+}
+
+.logo{
+  margin-left: 5%;
+  color: #28263A ;
+  text-decoration: none;
+}
+
+.logindiv{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.login{
+  margin-right: 5%;
+  position: relative;
+  text-decoration: none;
+  color: #28263A ;
+}
+
+/*active*/
+
+
+
+
+/*active*/

@@ -1,9 +1,16 @@
 *{
   box-sizing: border-box;
+  transition: 0.3s;
+}
+
+:root{
+  --background: #FEFEFE;
+  --logo: #3B3A2C;
+  --nav-text-color: #62ED3E;
 }
 
 body{
- background-color: #28263A ;
+ background-color: var(--background) ;
  font-family: pop;
  display: flex;
  flex-direction: column;
@@ -18,18 +25,87 @@ body::-webkit-scrollbar{
   src: url(../public/poppins/Poppins-Regular.ttf);
 }
 nav{
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #41BD4F;
   width: 100%;
-  height: 10vh;
+  height: 12vh;
+  overflow-x: scroll;
+  background-color: var(--background);
+}
+
+nav::-webkit-scrollbar{
+  display: none;
+}
+
+main{
+  /*border: 1px solid red;*/
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  height: calc(90vh - 50px);
+  overflow-y: scroll;
+}
+
+.mainregister{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+main::-webkit-scrollbar{
+  display: none;
+}
+
+.everything{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 70% ;
+  /*border: 1px solid red;*/
+}
+
+button{
+  padding: 20px;
+  width: 130px;
+  border: none;
+  background-color: var(--nav-text-color);
+  color: var(--background);
+  font-family: pop;
+  border-radius: 10px;
+}
+
+.illustration{
+  content: url(../public/illustration.png);
+  width: 40%;
+  height: 80%;
+}
+
+h1{
+  text-align: center;
+  font-size: 350%;
+  color: var(--logo);
+}
+
+p{
+  border: 1px solid var(--background);
+  margin-top: -10px;
+  text-align: center;
+  color: var(--nav-text-color);
+  width: 100%;
+  max-width: 450px;
+ 
 }
 
 .logo{
   margin-left: 5%;
-  color: #28263A ;
+  color: var(--logo);
   text-decoration: none;
 }
 
@@ -37,18 +113,223 @@ nav{
   display: flex;
   justify-content: end;
   width: 100%;
+  height: 100%;
+  align-items: center;
+ min-width: 535px;
 }
 
 .login{
   margin-right: 5%;
   position: relative;
   text-decoration: none;
-  color: #28263A ;
 }
+
+.log{
+  background-color: var(--nav-text-color);
+  color: var(--background);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h4{
+  color: var(--nav-text-color);
+}
+
+.icon{
+  color: var(--nav-text-color);
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*register*/
+
+.choosing{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: center;
+}
+
+.card{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--nav-text-color);
+  width: 30%;
+  color: var(--background);
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.yes{
+  background-color: var(--background);
+  color: var(--nav-text-color);
+}
+
+.buyermain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 70%;
+  justify-content: space-between;
+}
+
+input{
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 3px solid #8f8e81 ;
+  outline: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-family: pop;
+}
+
+.regbutt{
+  position: relative;
+   margin: 0 auto;
+  padding: 13px;
+}
+
+.red{
+  border-color:  hsl(354, 100%, 66%);
+}
+
+
+/*register*/
+
+
+/*buyerpage */
+
+.choices{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.choice{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--nav-text-color);
+  width: 20%;
+  color: var(--background);
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.vegetables{
+  height: 80%;
+  width: 100%;
+  content: url(../public/vegetables.webp);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.seeds{
+  height: 80%;
+  width: 100%;
+  content: url(../public/flaxseed-close-up-royalty-free-image-1636392298.jpg);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.other{
+  height: 80%;
+  width: 100%;
+  content: url(../public/otheragain.webp);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+/*buyerpage */
 
 /*active*/
 
+.log:hover{
+  /*color: var(--nav-text-color);
+  background-color: var(--background);*/
+  background-color: #9bf086;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
 
+h4:hover{
+  background-color: var(--nav-text-color);
+  color: var(--background);
+  padding: 10px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: #9bf086;
+  cursor: pointer;
+}
+
+.icon:hover{
+  cursor: pointer;
+  padding: 2px;
+  border: 1px solid var(--background);
+  background-color: var(--nav-text-color);
+  color: var(--background);
+  border-radius: 20px;
+}
+
+/*register*/
+
+.yes:hover{
+  background-color: #d8d0d0;
+  color: var(--background);
+}
+
+.card:hover{
+  width: 35%;
+  height: 75%;
+}
+
+input:focus{
+  border-color: var(--logo);
+}
+
+.red:focus{
+  border-color:  hsl(354, 100%, 66%);
+}
+
+/*register*/
+
+/*buyerpage */
+
+.choice:hover{
+  width: 23%;
+  height: 80%;
+  cursor: pointer;
+}
+
+/*buyerpage */
 
 
 /*active*/

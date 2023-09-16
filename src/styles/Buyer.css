@@ -104,7 +104,7 @@
   .other{
     height: 80%;
     width: 100%;
-    content: url(../public/otheragain.webp);
+    content: url(../../public/otheragain.webp);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }

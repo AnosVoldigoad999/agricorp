@@ -1,0 +1,104 @@
+/*profile section*/
+
+:root{
+    --background: #FEFEFE;
+    --logo: #3B3A2C;
+    --nav-text-color: #62ED3E;
+  }
+
+.body{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.pfp{
+    width: 200px;
+    height: 200px;
+    color: var(--logo);
+  }
+
+.bigcart{
+    width: 200px;
+    height: 200px;
+    color: var(--logo);
+}
+  .sidenav{
+    border-radius: 15px;
+    background-color: var(--nav-text-color);
+    width: fit-content;
+    height: 97vh;
+  }
+
+  .sidenav ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .sidenav ul li{
+    padding: 20px 49px;
+    position: relative;
+    right: 20%;
+    list-style: none;
+    margin-bottom: 30px;
+    color: var(--background);
+  }
+
+  .links{
+    text-decoration: none;
+    width: 130%;
+    height: 10%;
+  }
+
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 1%;
+  }
+
+  .proficon{
+    position: relative;
+    top: 2px;
+    transition: 0s;
+  }
+
+  #logout{
+    color:  hsl(354, 100%, 66%);
+  }
+
+ /*grid*/
+ .grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    border: 1px solid var(--logo);
+    height: 70%;
+    width: 100%;
+  }
+
+ .grid div{
+    border: 1px solid var(--logo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+  /*grid*/
+
+  /*profile section*/
+
+
+  /*active*/
+
+  .sidenav ul li:hover{
+    background-color: var(--background);
+    color: var(--nav-text-color);
+    cursor: pointer;
+  }
+
+  /*active*/

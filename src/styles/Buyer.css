@@ -1,0 +1,227 @@
+/*buyerpage */
+
+:root{
+  --background: #FEFEFE;
+  --logo: #3B3A2C;
+  --nav-text-color: #62ED3E;
+}
+
+
+.choices{
+  width: 100%;
+  height: fit-content;
+  /*border: 1px solid red;*/
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  row-gap: 10%;
+  }
+  
+ 
+
+  .choice{
+    margin: 0 auto;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--nav-text-color);
+    color: var(--background);
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .choices .link{
+    text-decoration: none;
+  
+  }
+  
+  .vegetables{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/vegetables.webp);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .cereals{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/cereal.jpg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .legumes{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/legumes.avif);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .fruits{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/fruits.jpg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .nuts{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/nuts.avif);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .seeds{
+    height: 80%;
+    width: 100%;
+    content: url(../public/flaxseed-close-up-royalty-free-image-1636392298.jpg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .fibres{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/fibres.jpg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .beverages{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/beverage.webp);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .other{
+    height: 80%;
+    width: 100%;
+    content: url(../public/otheragain.webp);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .profile{
+    color: var(--nav-text-color);
+    width: 30px;
+    height: 30px;
+  }
+
+  .profilelink{
+    margin-right: 5%;
+  }
+  
+  
+  /*buyerpage */
+
+
+  /*profile section*/
+
+  .pfp{
+    width: 200px;
+    height: 200px;
+  }
+
+  /*profile section*/
+
+  
+  /*veggies*/
+
+.sellers h1{
+  color: var(--logo);
+  text-align: center;
+}
+
+  main{
+    /*border: 1px solid red;*/
+  }
+
+  .sellers{
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid red;*/
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    justify-items: center;
+  }
+
+  .sellers .link{
+    text-decoration: none;
+  }
+
+  .sellers div{
+    /*border: 1px solid red;*/
+  }
+
+
+
+  /*veggies*/
+
+  .searchbar{
+    margin-top: 20px;
+    margin-left: 5%;
+    height: 2%;
+    padding-right: 20%;
+    border: 3px solid #8f8e81 ;
+    outline: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-family: pop;
+  }
+
+  .suggestions{
+    position: relative;
+    left: 43%;
+  }
+
+  /*active*/
+
+  .pfp:hover{
+    cursor: pointer;
+    width: 220px;
+    height: 220px;
+  }
+
+
+  .choice:hover{
+    width: 75%;
+    height: 320px;
+    cursor: pointer;
+  }
+  
+
+  /*active*/
+
+
+  /*media queries*/
+
+
+
+  @media (max-width:900px){
+    .choices{
+      /*border: 1px solid red;*/
+      display: grid;
+      grid-template-columns: 50% 50%;
+      row-gap: 10%;
+      } 
+
+      .searchbar{
+        padding-right: 20%;
+        margin-right: 25%;
+      }
+
+
+  }
+
+  
+
+
+  /*media queries*/

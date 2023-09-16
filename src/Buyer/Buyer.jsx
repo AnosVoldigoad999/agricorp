@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 export default function Buyer ({first, 
     last, 
     email, 
@@ -21,6 +22,19 @@ export default function Buyer ({first,
     setConfirmClass,
     valid,
     setValid}){
+    
+      useEffect(()=>{
+        setFirstClass('')
+        setLastClass('')
+        setEmailClass('')
+        setPassClass('')
+        setConfirmClass('')
+        setFirst('')
+        setLast('')
+        setEmail('')
+        setPass('')
+        setConfirm('')
+    }, [])
       const handleSubmit = (e) =>{
         e.preventDefault()
         if(first.length===0){
@@ -70,7 +84,7 @@ export default function Buyer ({first,
 
 
      <nav>
-    <Link to="#" className='logo'><h1>Agricorp</h1></Link>
+    <Link to="/" className='logo'><h1>Agricorp</h1></Link>
       <div className='logindiv'>
       <Link to="/" className='login'><h4>Home</h4></Link>
       <Link to="#" className='login'><h4>About Us</h4></Link>
@@ -91,7 +105,7 @@ export default function Buyer ({first,
         <input id='password' type="password" value={pass} onChange={e=>setPass(e.target.value)} className={passClass} />
         <label htmlFor="confirm">Confirm password</label>
         <input id='confirm' type='password' value={confirm} onChange={e=>setConfirm(e.target.value)} className={confirmClass} />
-       <button className='regbutt' >Register</button>
+        {valid===false ?<button>Register</button>:first.length===0?<button>Register</button>:last.length===0?<button>Register</button>:email.length===0?<button>Register</button>:pass.length===0?<button>Register</button>:confirm.length===0?<button>Register</button>:<Link to='/buyerpage'><button>Register</button></Link>}
       </form>
     </main>
     </>

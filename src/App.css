@@ -24,16 +24,23 @@ body::-webkit-scrollbar{
   font-family: pop;
   src: url(../public/poppins/Poppins-Regular.ttf);
 }
+
+
+
 nav{
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
-  height: 12vh;
+ width: 100%;
+ height: 12vh;
   overflow-x: scroll;
+  overflow-y: hidden;
   background-color: var(--background);
+  margin-top: -10px;
 }
+
+
 
 nav::-webkit-scrollbar{
   display: none;
@@ -87,9 +94,9 @@ button{
   height: 80%;
 }
 
-h1{
+nav h1{
   text-align: center;
-  font-size: 350%;
+  font-size: 200%;
   color: var(--logo);
 }
 
@@ -131,7 +138,7 @@ p{
   border-radius: 10px;
 }
 
-h4{
+nav h4{
   color: var(--nav-text-color);
 }
 
@@ -215,56 +222,15 @@ input{
 
 /*register*/
 
-
-/*buyerpage */
-
-.choices{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 100%;
+/*mobile?*/
+.logindivmobile{
+  display: none;
 }
 
-.choice{
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--nav-text-color);
-  width: 20%;
-  color: var(--background);
-  justify-content: center;
-  border-radius: 20px;
-  overflow: hidden;
+.menuitems{
+  display: none;
 }
 
-.vegetables{
-  height: 80%;
-  width: 100%;
-  content: url(../public/vegetables.webp);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.seeds{
-  height: 80%;
-  width: 100%;
-  content: url(../public/flaxseed-close-up-royalty-free-image-1636392298.jpg);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.other{
-  height: 80%;
-  width: 100%;
-  content: url(../public/otheragain.webp);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-/*buyerpage */
 
 /*active*/
 
@@ -277,7 +243,7 @@ input{
   border-radius: 10px;
 }
 
-h4:hover{
+nav h4:hover{
   background-color: var(--nav-text-color);
   color: var(--background);
   padding: 10px;
@@ -323,13 +289,100 @@ input:focus{
 
 /*buyerpage */
 
-.choice:hover{
-  width: 23%;
-  height: 80%;
+
+.profile:hover{
   cursor: pointer;
+  color: #9bf086;
 }
 
 /*buyerpage */
 
 
 /*active*/
+
+
+
+/*media queries*/
+
+@media (max-width:900px){
+  .logindiv{
+    display: none;
+  }
+
+  .logindivmobile{
+    position: relative;
+    display: block;
+    /*border: 1px solid red;*/
+  }
+  
+ 
+  .menuicon{
+    width: 30px;
+    height: 30px;
+  }
+  
+
+  #menucheck{
+    display:none ;
+  }
+
+  #menubutton{
+    z-index: 3;
+    position: relative;
+    top: 10px;
+    left: 90%;
+  }
+  
+
+
+  nav{
+    z-index: 2;
+    width: 100%;
+    /*border: 1px solid red;*/
+  }
+
+  .menuicon{
+  }
+
+  .menuitems{
+    z-index: 1;
+    width: fit-content;
+    height: fit-content;
+    top: -300px;
+    position: relative;
+    display: flex ;
+    flex-direction: column;
+  background-color: var(--nav-text-color);
+    left: 73% ;
+    transition: top 0.3s;
+    border-radius: 10px;
+  }
+
+  #menucheck:checked  ~  .menuitems{
+    top: 10px;
+   }
+  .menuitems ul .link{
+    text-decoration: none;
+    color: var(--background);
+  }
+
+  .menuitems ul .link .profile{
+    color: var(--background);
+  }
+
+  .menuitems ul li{
+    margin-top: 20px;
+    margin-right: 10px;
+    list-style: none;
+  }
+
+  main{
+    z-index: 1;
+    margin-top: -270px;
+  }
+
+}
+
+
+
+/*media queries*/

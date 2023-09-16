@@ -20,7 +20,9 @@ export default function Seller ({first,
     setLastClass,
     setEmailClass,
     setPassClass,
-    setConfirmClass}){
+    setConfirmClass,
+    valid,
+    setValid}){
 
         useEffect(()=>{
             setFirstClass('')
@@ -28,6 +30,11 @@ export default function Seller ({first,
             setEmailClass('')
             setPassClass('')
             setConfirmClass('')
+            setFirst('')
+            setLast('')
+            setEmail('')
+            setPass('')
+            setConfirm('')
         }, [])
 
       const handleSubmit = (e) =>{
@@ -38,7 +45,7 @@ export default function Seller ({first,
             setFirstClass('')
         }
 
-        if(lastClass.length===0){
+        if(last.length===0){
             setLastClass('red')
           } else{
               setLastClass('')
@@ -64,11 +71,20 @@ export default function Seller ({first,
           } else{
               setConfirmClass('')
           }
-          
+
+          if(first.length!==0 && 
+            last.length!==0 &&
+            email.length!==0 &&
+            pass.length!==0 &&
+            confirm.length!==0){
+                console.log('done')
+                setValid(true)
+                console.log(valid)
+          }   
       }
     return<>
      <nav>
-    <Link to="#" className='logo'><h1>Agricorp</h1></Link>
+    <Link to="/" className='logo'><h1>Agricorp</h1></Link>
       <div className='logindiv'>
       <Link to="/" className='login'><h4>Home</h4></Link>
       <Link to="#" className='login'><h4>About Us</h4></Link>
@@ -89,7 +105,7 @@ export default function Seller ({first,
         <input id='password' type="password" value={pass} onChange={e=>setPass(e.target.value)} className={passClass} />
         <label htmlFor="confirm">Confirm password</label>
         <input id='confirm' type='password' value={confirm} onChange={e=>setConfirm(e.target.value)} className={confirmClass} />
-        <button className='regbutt'>Register</button>
+        {valid===false ?<button>Register</button>:first.length===0?<button>Register</button>:last.length===0?<button>Register</button>:email.length===0?<button>Register</button>:pass.length===0?<button>Register</button>:confirm.length===0?<button>Register</button>:<Link to='/sellerpage'><button>Register</button></Link>}
       </form>
     </main>
     </>

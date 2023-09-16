@@ -1,0 +1,400 @@
+/*buyerpage */
+
+
+
+
+/*.choices{
+   display: grid;
+    
+  }
+  
+  .choice{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--nav-text-color);
+    width: 70%;
+    color: var(--background);
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .vegetables{
+    height: 80%;
+    width: 100%;
+    content: url(../public/vegetables.webp);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .seeds{
+    height: 80%;
+    width: 100%;
+    content: url(../public/flaxseed-close-up-royalty-free-image-1636392298.jpg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .other{
+    height: 80%;
+    width: 100%;
+    content: url(../public/otheragain.webp);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .profile{
+    color: var(--nav-text-color);
+    width: 30px;
+    height: 30px;
+  }
+
+  .profilelink{
+    margin-right: 5%;
+  }
+  
+  
+  /*sellerpage */
+
+  /*sellerpage */
+
+
+  :root{
+    --background: #FEFEFE;
+    --logo: #3B3A2C;
+    --nav-text-color: #62ED3E;
+  }
+
+  main .link{
+    text-decoration: none;
+  }
+
+  
+
+.listings{
+  width: 80vw;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+  /*border: 1px solid red;*/
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  row-gap: 10%;
+}
+
+.listings::-webkit-scrollbar{
+  display: none;
+}
+  
+.listings .img{
+  width: 100%;
+  height: 30%;
+}
+ 
+
+  .listing{
+    margin: 0 auto;
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--nav-text-color);
+    color: var(--background);
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .listing .link{
+    color:  hsl(354, 100%, 66%);
+    padding: 10px;
+  }
+
+  .listing .link2{
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .listings .link{
+    text-decoration: none;
+
+  }
+  
+  .vegetables{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/vegetables.webp);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .cereals{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/cereal.jpg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .legumes{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/legumes.avif);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .fruits{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/fruits.jpg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .nuts{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/nuts.avif);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .seeds{
+    height: 80%;
+    width: 100%;
+    content: url(../public/flaxseed-close-up-royalty-free-image-1636392298.jpg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .fibres{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/fibres.jpg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .beverages{
+    height: 80%;
+    width: 100%;
+    content: url(../../public/beverage.webp);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .other{
+    height: 80%;
+    width: 100%;
+    content: url(../public/otheragain.webp);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .profile{
+    color: var(--nav-text-color);
+    width: 30px;
+    height: 30px;
+  }
+
+  .profilelink{
+    margin-right: 5%;
+  }
+  
+  img{
+    height: 80%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .choicebody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /*sellerpage */
+
+  /*add items*/
+
+  .cats{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .redcats{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cats1, .cats2{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .chosen{
+    background-color: var(--logo);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 2%;
+    color: var(--background);
+  }
+
+  .cat{
+    background-color: var(--background);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 2%;
+    color: var(--logo); 
+  }
+
+  
+  /*add items*/
+
+  /*profile section*/
+
+  .pfp{
+    width: 200px;
+    height: 200px;
+  }
+
+  /*profile section*/
+
+  /*veggies*/
+
+  .main{
+    /*border: 1px solid red;*/
+  }
+
+  /*sellerpagelistings????*/
+
+  .sellermain{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    /*height: 100vh;*/
+    height: calc(90vh - 50px);
+    overflow-y: scroll;
+  }
+
+  .sellermain::-webkit-scrollbar{
+    display: none;
+  }
+
+  .sellermain h1{
+    margin: 0 auto;
+  }
+
+ .prop{
+  border: none;
+  color: var(--background);
+  margin-top: 2%;
+ }
+
+
+  .mainlistings{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    row-gap: 6%;
+  }
+
+  .mainlistings .link{
+    text-decoration: none;
+  }
+
+  /*sellerpagelistings????*/
+
+  .sellers{
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid red;*/
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    justify-items: center;
+  }
+
+  .sellers .link{
+    text-decoration: none;
+  }
+
+  .sellers div{
+    /*border: 1px solid red;*/
+  }
+
+
+
+  /*veggies*/
+
+.back{
+  color: var(--logo);
+  position: relative;
+  height: 30px;
+  width: 30px;
+  right: 30%;
+}
+
+.back:hover{
+  cursor: pointer;
+}
+
+
+  /*active*/
+
+  .pfp:hover{
+    cursor: pointer;
+    width: 220px;
+    height: 220px;
+  }
+
+
+  .listing:hover{
+    width: 75%;
+    cursor: pointer;
+  }
+  
+  .listing .link:hover{
+    background-color: var(--background);
+  }
+
+  .cat:hover{
+    cursor: pointer;
+    background-color: var(--logo);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 2%;
+    color: var(--background); 
+  }
+
+  /*active*/
+
+
+  /*mobile queries*/
+
+ @media (max-width:900px) {
+  .sellermain{
+    margin-top: -230px;
+  }
+  
+  .mainlistings{
+    grid-template-columns: 50% 50%;
+  }
+
+ }
+
+  /*mobile queries*/
+  
+
+
+
+  
+  

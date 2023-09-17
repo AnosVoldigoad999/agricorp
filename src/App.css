@@ -330,7 +330,7 @@ input:focus{
     z-index: 3;
     position: relative;
     top: 10px;
-    left: 90%;
+    left: 85%;
   }
   
 
@@ -353,7 +353,7 @@ input:focus{
     display: flex ;
     flex-direction: column;
   background-color: var(--nav-text-color);
-    left: 73% ;
+    left: 69% ;
     transition: top 0.3s;
     border-radius: 10px;
   }

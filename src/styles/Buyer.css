@@ -226,13 +226,13 @@
       display: none;
     }
     .choices{
-      grid-template-columns: 80%;
+      grid-template-columns: 95%;
       justify-content: center;
       row-gap: 50px;
     }
 
     .choiceh1{
-      font-size: 1.5rem;
+      font-size: 170%;
     }
 
   }

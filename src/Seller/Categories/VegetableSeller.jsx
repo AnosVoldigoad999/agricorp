@@ -6,9 +6,12 @@ import { useEffect, useState } from 'react'
 export default function VegetableSeller(
     {
         goods,
-        setGoods
+        cartGoods,
+        setCartGoods
     }
 ){
+
+  const [sellerfootercart, setsellerfootercart] = useState('sellerfooter')
  const [veggies, setVeggies] = useState([])
 useEffect(()=>{
   for(let i=0; i<goods.length; i++){
@@ -19,6 +22,27 @@ useEffect(()=>{
     }
   }
 }, [])
+
+
+
+function handleCart(good){
+  setCartGoods(currentCartGoods=>{
+    return [...currentCartGoods, {
+      name:good.name,
+      price:good.price,
+      quantity:good.quantity,
+      category:good.category,
+      link:good.link,
+      id:good.id
+    }]
+  })
+setsellerfootercart('sellerfootervisible')
+setTimeout(()=>{
+  setsellerfootercart('sellerfooter')
+}, 3000)
+
+
+}
     return<>
        <nav>
         <Link to="/" className='logo'><h1>Agricorp</h1></Link>
@@ -50,6 +74,7 @@ useEffect(()=>{
             <p className="prop">price: {`#${good.price}`}</p>
             <p className="prop">Quantity: {good.quantity}</p>
             <p className="prop">category:{good.category}</p>
+            <button onClick={()=>handleCart(good)}>Add to cart</button>
             </div>
         </Link>
           }
@@ -57,6 +82,9 @@ useEffect(()=>{
         }
       </div>
      }
+        </div>
+        <div className={sellerfootercart}>
+          <h5>Item added successfully!</h5>
         </div>
     </>
 }

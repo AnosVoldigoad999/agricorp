@@ -221,7 +221,21 @@
 
   }
 
-  
+  @media (max-width:600px){
+    .searchbar{
+      display: none;
+    }
+    .choices{
+      grid-template-columns: 80%;
+      justify-content: center;
+      row-gap: 50px;
+    }
+
+    .choiceh1{
+      font-size: 1.5rem;
+    }
+
+  }
 
 
   /*media queries*/

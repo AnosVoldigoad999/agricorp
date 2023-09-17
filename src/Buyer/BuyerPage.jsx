@@ -7,7 +7,7 @@ import {CgProfile} from 'react-icons/cg'
 export default function BuyerHome ({goods, setGoods}){
     const [isSearching, setIsSearching] = useState('')
     const main = <main>
-    <h1>What would you like to buy?</h1>
+    <h1 className="choiceh1">What would you like to buy?</h1>
     <div className="choices">
         <Link className="link" to='/veggies'>
             <div className="choice">

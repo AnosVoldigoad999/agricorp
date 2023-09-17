@@ -46,12 +46,27 @@ export default function App(){
   const [emailClass, setEmailClass] = useState('')
   const [passClass, setPassClass] = useState('')
   const [confirmClass, setConfirmClass] = useState('')
-  const [valid, setValid] = useState(false)
+  const [valid, setValid] = useState(()=>{
+    const validvalue=JSON.parse(localStorage.getItem('valid'))
+    if(!validvalue){
+      return false
+    }else{
+      return validvalue
+    }
+  })
   const [productName, setProductName] = useState('')
   const [linkaddress, setLink] = useState('')
   const [price, setPrice] = useState('')
   const [quantity, setQuantity] = useState('')
   const [category, setCategory] = useState('')
+  const [cartgoods, setCartGoods] = useState(()=>{
+    const storedCart = JSON.parse(localStorage.getItem('cartgoods'))
+    if(!storedCart){
+      return []
+    } else{
+      return storedCart
+    }
+  })
   const [goods, setGoods] = useState(()=>{
     const storedGoods = JSON.parse(localStorage.getItem('goods'))
     if (!storedGoods){
@@ -65,21 +80,34 @@ useEffect(
     localStorage.setItem('goods', JSON.stringify(goods))
   }
 , [goods])
+useEffect(
+  ()=>{
+    localStorage.setItem('cartgoods', JSON.stringify(cartgoods))
+  },
+[cartgoods])
+useEffect(
+  ()=>{
+    localStorage.setItem('valid', JSON.stringify(valid))
+  },
+[valid])
   const pattern =  /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
 
 
   return <>
 
 <Routes>
-<Route path='/buyerpage' element={<BuyerHome goods={goods} setGoods={setGoods} />} />
+{
+  valid?<Route path='/buyerpage' element={<BuyerHome goods={goods} setGoods={setGoods} />} />:valid
+}
 <Route path='/sellerpage' element={<SellerHome goods={goods} />} />
   <Route path='/' element={<Landing />} />
   <Route path='/buyerprofile' element={<BuyerProfile />} />
-  <Route path='/cart' element={<Cart />} />
+  <Route path='/cart' element={<Cart cartgoods={cartgoods} setCartGoods={setCartGoods} />} />
   <Route path='/sellerprofile' element={<SellerProfile />} />
   <Route path='/listings' element={<SellerMarket
   goods={goods}
-  setGoods={setGoods} />} />
+  setGoods={setGoods}
+  setCartGoods={setCartGoods} />} />
   <Route path='/veggies' element={<Veggies />} />
   <Route path='/seeds' element={<Seeds />} />
   <Route path='/other' element={<Other />} />
@@ -92,31 +120,49 @@ useEffect(
   {/*cats*/}
   <Route path='/veggieseller' element={<VegetableSeller
   goods={goods}
-  setGoods={setGoods} />} />
+  setGoods={setGoods}
+  cartGoods={cartgoods}
+  setCartGoods={setCartGoods} />} />
   <Route path='/seedseller' element={<SeedSeller
   goods={goods}
-  setGoods={setGoods} />} />
+  setGoods={setGoods}
+  cartGoods={cartgoods}
+  setCartGoods={setCartGoods}  />} />
   <Route path='/otherseller' element={<OtherSeller
   goods={goods}
-  setGoods={setGoods} />} />
+  setGoods={setGoods}
+  cartGoods={cartgoods}
+  setCartGoods={setCartGoods}  />} />
     <Route path='/cerealseller' element={<CerealSeller
   goods={goods}
-  setGoods={setGoods} />} />
+  setGoods={setGoods} 
+  cartGoods={cartgoods}
+  setCartGoods={setCartGoods} />} />
     <Route path='/legumeseller' element={<LegumeSeller
   goods={goods}
-  setGoods={setGoods} />} />
+  setGoods={setGoods} 
+  cartGoods={cartgoods}
+  setCartGoods={setCartGoods} />} />
     <Route path='/fruitseller' element={<FruitSeller
   goods={goods}
-  setGoods={setGoods} />} />
+  setGoods={setGoods} 
+  cartGoods={cartgoods}
+  setCartGoods={setCartGoods}  />} />
     <Route path='/nutseller' element={<NutSeller
   goods={goods}
-  setGoods={setGoods} />} />
+  setGoods={setGoods} 
+  cartGoods={cartgoods}
+  setCartGoods={setCartGoods}  />} />
     <Route path='/fibreseller' element={<FibreSeller
   goods={goods}
-  setGoods={setGoods} />} />
+  setGoods={setGoods} 
+  cartGoods={cartgoods}
+  setCartGoods={setCartGoods}  />} />
     <Route path='/beverageseller' element={<BeverageSeller
   goods={goods}
-  setGoods={setGoods} />} />
+  setGoods={setGoods} 
+  cartGoods={cartgoods}
+  setCartGoods={setCartGoods}  />} />
   {/*cats*/}
   
   <Route path='/additems' element={<AddItems productName={productName}

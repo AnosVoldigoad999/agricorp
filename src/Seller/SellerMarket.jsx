@@ -10,7 +10,8 @@ import { useState, useEffect } from 'react'
 
 export default function SellerMarket ({
     goods,
-    setGoods
+    setGoods,
+    setCartGoods
 }){
     useEffect(()=>{
         setIsEditing(false)
@@ -34,6 +35,9 @@ export default function SellerMarket ({
             return currentgoods.filter(good=> good.id !== id)
         }
         )
+        /*setCartGoods(currentcartgoods=>{
+          return currentcartgoods.filter(good=>good.id!=id)
+        })*/
     }
     
     function handleEdit (good){

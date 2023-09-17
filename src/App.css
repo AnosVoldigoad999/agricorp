@@ -376,7 +376,7 @@ input:focus{
     list-style: none;
   }
 
-  main{
+  .wo{
     z-index: 1;
     margin-top: -200px;
   }

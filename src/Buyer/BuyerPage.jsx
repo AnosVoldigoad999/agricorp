@@ -6,7 +6,7 @@ import VegetableSeller from "../Seller/Categories/VegetableSeller"
 import {CgProfile} from 'react-icons/cg'
 export default function BuyerHome ({goods, setGoods}){
     const [isSearching, setIsSearching] = useState('')
-    const main = <main>
+    const main = <main className="wo">
     <h1 className="choiceh1">What would you like to buy?</h1>
     <div className="choices">
         <Link className="link" to='/veggies'>

@@ -81,7 +81,7 @@ export default function Login ({
       </div>
     </nav>
     <div className='godmenu'>
-       <input type="checkbox" id="menucheck" />
+    <input type="checkbox" id="menucheck" />
           <label htmlFor="menucheck" id="menubutton" ><AiOutlineMenu className="menuicon" /></label>
        <div className="menuitems">
           <ul>
@@ -92,8 +92,9 @@ export default function Login ({
           </ul>
         </div>
        </div>
+       <br/>
     <main className='buyermain'>
-      <form onSubmit={handleSubmit}>
+      <form className='loginform' onSubmit={handleSubmit}>
         <label htmlFor="email">Email</label>
         <input id='email' value={email} onChange={e=>setEmail(e.target.value)} className={emailClass} />
         <label htmlFor="password" >Password</label>

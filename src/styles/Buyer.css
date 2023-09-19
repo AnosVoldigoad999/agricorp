@@ -242,7 +242,9 @@
     .mobilesearchbar{
       display: block;
       height: 10px;
-      width: 70%;
+      margin-top: 20px;
+      margin-left: 10%;
+      width: 30%;
     }
 
   }

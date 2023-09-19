@@ -323,7 +323,6 @@ input:focus{
   }
 
   #menubutton{
-    z-index: 2;
     position: relative;
     top: 10px;
     margin-left: 70%;
@@ -332,14 +331,13 @@ input:focus{
   }
   
   .godmenu{
-    z-index: 3;
     position: fixed;
     display: flex;
     flex-direction: column;
     align-items: end;
     width: 95vw;
     height: 10vh;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     /*margin-left: 70%;*/
     /*left: 75%;*/
   }
@@ -350,7 +348,7 @@ input:focus{
   }
 
   nav{
-    z-index: 2;
+   
  
     
     /*border: 1px solid red;*/
@@ -362,7 +360,6 @@ input:focus{
   }
 
   .menuitems{
-    z-index: 1;
     width: fit-content;
     height: fit-content;
     top: -350px;

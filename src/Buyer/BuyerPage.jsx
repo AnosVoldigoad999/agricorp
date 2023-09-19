@@ -8,6 +8,7 @@ export default function BuyerHome ({goods, setGoods}){
     const [isSearching, setIsSearching] = useState('')
     const main = <main className="wo">
     <h1 className="choiceh1">What would you like to buy?</h1>
+    <input placeholder="search by category..." className="mobilesearchbar" value={isSearching} onChange={e=>setIsSearching(e.target.value)} />
     <div className="choices">
         <Link className="link" to='/veggies'>
             <div className="choice">
@@ -137,10 +138,6 @@ return<>
         <nav>
         <Link to="/" className='logo'><h1>Agricorp</h1></Link>
         <input placeholder="search by category..." className="searchbar" value={isSearching} onChange={e=>setIsSearching(e.target.value)} />
-        {/*<div className="logindivmobile">
-        <input type="checkbox" id="menucheck" />
-          <label htmlFor="menucheck" id="menubutton" ><AiOutlineMenu className="menuicon" /></label>
-        </div>*/}
           <div className='logindiv'>
           <Link to="/buyerpage" className='login'><h4>Home</h4></Link>
           <Link to="#" className='login'><h4>About Us</h4></Link>

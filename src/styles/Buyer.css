@@ -199,8 +199,10 @@
   
 
   /*active*/
-
-
+.mobilesearchbar{
+  display: none;
+}
+  
   /*media queries*/
 
 
@@ -218,6 +220,7 @@
         margin-right: 25%;
       }
 
+
   }
 
   @media (max-width:600px){
@@ -234,7 +237,12 @@
     }
 
     .choiceh1{
-      font-size: 1.5rem;
+      font-size: 1.27rem;
+    }
+    .mobilesearchbar{
+      display: block;
+      height: 10px;
+      width: 70%;
     }
 
   }

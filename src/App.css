@@ -311,11 +311,7 @@ input:focus{
     display: none;
   }
 
-  .logindivmobile{
-    position: relative;
-    display: block;
-    /*border: 1px solid red;*/
-  }
+
   
  
   .menuicon{
@@ -332,13 +328,20 @@ input:focus{
     z-index: 2;
     position: relative;
     top: 10px;
-    left: 100px;
+    margin-left: 70%;
+    width: fit-content;
+
   }
   
   .godmenu{
     z-index: 3;
     position: fixed;
-    margin-left: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 95vw;
+    height: fit-content;
+    /*margin-left: 70%;*/
     /*left: 75%;*/
   }
 
@@ -368,7 +371,7 @@ input:focus{
     display: flex ;
     flex-direction: column;
   background-color: var(--nav-text-color);
-    /*left: 69% ;*/
+   
     transition: top 0.3s;
     border-radius: 10px;
     transition: 0.5s;
@@ -430,19 +433,7 @@ form{
 }
 
 @media (max-width:600px){
-  #menubutton{
-    z-index: 2;
-    position: relative;
-    top: 10px;
-    left: 80px;
-  }
-  
-  .godmenu{
-    z-index: 3;
-    position: fixed;
-    margin-left: 65%;
-    /*left: 75%;*/
-  }
+ 
 }
 
 /*media queries*/

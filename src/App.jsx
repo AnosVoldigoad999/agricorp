@@ -99,8 +99,11 @@ useEffect(
 {
   valid?<Route path='/buyerpage' element={<BuyerHome goods={goods} setGoods={setGoods} />} />:valid
 }
-<Route path='/sellerpage' element={<SellerHome goods={goods} />} />
-  <Route path='/' element={<Landing />} />
+{
+  valid?<Route path='/sellerpage' element={<SellerHome goods={goods} />} />:valid
+}
+<Route path='*' element={<h1>404 NOT FOUND</h1>} />
+  <Route path='/' element={<Landing setValid={setValid} />} />
   <Route path='/buyerprofile' element={<BuyerProfile />} />
   <Route path='/cart' element={<Cart cartgoods={cartgoods} setCartGoods={setCartGoods} />} />
   <Route path='/sellerprofile' element={<SellerProfile />} />
@@ -199,7 +202,10 @@ useEffect(
    emailClass={emailClass}
    setEmailClass={setEmailClass}
    passClass={passClass}
-   setPassClass={setPassClass} />} />
+   setPassClass={setPassClass}
+   valid={valid}
+   setValid={setValid}
+   pattern={pattern} />} />
   <Route path='/register'  element={<Register />} />
   <Route path='/buyer' element={<Buyer first={first}
    setFirst={setFirst}

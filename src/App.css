@@ -300,7 +300,9 @@ input:focus{
 
 /*active*/
 
-
+.buyermain .login{
+  margin: 0 auto;
+}
 
 /*media queries*/
 
@@ -327,19 +329,32 @@ input:focus{
   }
 
   #menubutton{
-    z-index: 3;
+    z-index: 2;
     position: relative;
     top: 10px;
-    left: 85%;
+    left: 100px;
   }
   
+  .godmenu{
+    z-index: 3;
+    position: fixed;
+    margin-left: 70%;
+    /*left: 75%;*/
+  }
 
+
+  body{
+    overflow-x: hidden;
+  }
 
   nav{
     z-index: 2;
-    width: 100%;
+ 
+    
     /*border: 1px solid red;*/
   }
+
+  
 
   .menuicon{
   }
@@ -348,15 +363,18 @@ input:focus{
     z-index: 1;
     width: fit-content;
     height: fit-content;
-    top: -300px;
+    top: -350px;
     position: relative;
     display: flex ;
     flex-direction: column;
   background-color: var(--nav-text-color);
-    left: 69% ;
+    /*left: 69% ;*/
     transition: top 0.3s;
     border-radius: 10px;
+    transition: 0.5s;
   }
+
+  
 
   #menucheck:checked  ~  .menuitems{
     top: 10px;
@@ -364,6 +382,11 @@ input:focus{
   .menuitems ul .link{
     text-decoration: none;
     color: var(--background);
+  }
+
+  .menuitems ul .link li:hover{
+    background-color: var(--background);
+    color: var(--nav-text-color);
   }
 
   .menuitems ul .link .profile{
@@ -376,13 +399,50 @@ input:focus{
     list-style: none;
   }
 
-  .wo{
-    z-index: 1;
-    margin-top: -200px;
+ 
+
+  .everything{
+    width: 100%;
+   
+  }
+  
+  .menubutt{
+    background-color: var(--background);
+    color: var(--logo);
   }
 
+  .menubutt:hover{
+    background-color: var(--background);
+    color: var(--logo );
+  }
+
+  /*login*/
+form{
+  width: 90%;
 }
 
 
+
+  /*login*/
+
+  
+
+}
+
+@media (max-width:600px){
+  #menubutton{
+    z-index: 2;
+    position: relative;
+    top: 10px;
+    left: 80px;
+  }
+  
+  .godmenu{
+    z-index: 3;
+    position: fixed;
+    margin-left: 65%;
+    /*left: 75%;*/
+  }
+}
 
 /*media queries*/

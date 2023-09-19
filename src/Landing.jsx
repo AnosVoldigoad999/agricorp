@@ -1,8 +1,12 @@
 import{RiFacebookFill, RiTwitterFill} from 'react-icons/ri'
 import { PiInstagramLogo } from 'react-icons/pi'
+import {AiOutlineMenu} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
-
-export default function Landing(){
+import { useEffect } from 'react'
+export default function Landing({setValid}){
+  useEffect(()=>{
+    setValid(false)
+  }, [])
     return <>
     <nav>
     <Link to="/" className='logo'><h1>Agricorp</h1></Link>
@@ -14,6 +18,19 @@ export default function Landing(){
       <Link to="/login" className='login'><h4 className='log'>Login</h4></Link>
       </div>
     </nav>
+    <div className='godmenu'>
+       <input type="checkbox" id="menucheck" />
+          <label htmlFor="menucheck" id="menubutton" ><AiOutlineMenu className="menuicon" /></label>
+       <div className="menuitems">
+          <ul>
+          <Link className="link" to='/login'><li>Login</li></Link>
+            <Link className="link" to='/'><li>Home</li></Link>
+            <Link className="link"><li>About us</li></Link>
+            <Link className="link"><li>Services</li></Link>
+            <Link className="link"><li>Contact us</li></Link>
+          </ul>
+        </div>
+       </div>
     <br />
     <main>
     <div className='everything'>

@@ -34,6 +34,7 @@ export default function Buyer ({first,
         setEmail('')
         setPass('')
         setConfirm('')
+      
     }, [])
       const handleSubmit = (e) =>{
         e.preventDefault()

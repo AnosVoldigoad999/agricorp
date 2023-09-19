@@ -149,19 +149,20 @@ return<>
           <Link to='/buyerprofile' className="profilelink"><CgProfile className="profile" /></Link>
 </div>
         </nav> 
-       <div>
+        <div className='godmenu'>
        <input type="checkbox" id="menucheck" />
           <label htmlFor="menucheck" id="menubutton" ><AiOutlineMenu className="menuicon" /></label>
        <div className="menuitems">
           <ul>
-          <Link className="link"><li><CgProfile className="profile" /></li></Link>
-            <Link className="link"><li>Home</li></Link>
+          <Link to='/buyerprofile' className="link"><CgProfile className="profile" /></Link>
+            <Link className="link" to='/buyerpage'><li>Home</li></Link>
             <Link className="link"><li>About us</li></Link>
             <Link className="link"><li>Services</li></Link>
             <Link className="link"><li>Contact us</li></Link>
           </ul>
         </div>
        </div>
+       <br />
         {!isSearching? main:searchResults}
     </>
   }

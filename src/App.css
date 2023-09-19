@@ -419,6 +419,10 @@ input:focus{
     color: var(--logo );
   }
 
+  main{
+    margin-top: 50px;
+  }
+
   /*login*/
 form{
   width: 90%;

@@ -399,9 +399,6 @@
   /*mobile queries*/
 
  @media (max-width:900px) {
-  .sellermain{
-    margin-top: -230px;
-  }
   
   .mainlistings{
     grid-template-columns: 50% 50%;

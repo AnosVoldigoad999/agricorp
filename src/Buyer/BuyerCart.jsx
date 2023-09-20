@@ -1,6 +1,6 @@
 import {CgProfile} from 'react-icons/cg'
 import {PiGearSixFill, PiShoppingCartFill} from 'react-icons/pi'
-import {AiOutlineShop} from 'react-icons/ai'
+import {AiOutlineMenu} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import {IoIosExit} from 'react-icons/io'
 import '../styles/Profile.css'
@@ -36,6 +36,17 @@ return<>
             <Link to='/' className='links'><li id='logout'><IoIosExit className='proficon' />Log out</li></Link>
         </ul>
     </div>
+    <div className='godmenu'>
+       <input type="checkbox" id="menucheck" />
+          <label htmlFor="menucheck" id="menubutton" ><AiOutlineMenu className="menuicon" /></label>
+       <div className="menuitems">
+       <ul>
+           <Link to='/buyerprofile' className='link'><li><PiGearSixFill className='proficon'/>Settings</li></Link>
+            <Link to='/cart' className='link'><li><PiShoppingCartFill className='proficon' />Cart</li></Link>
+            <Link to='/' className='link'><li id='logout'><IoIosExit className='proficon' />Log out</li></Link>
+        </ul>
+        </div>
+       </div>
 {cartgoods.length===0  &&   <div className='main'>
 <PiShoppingCartFill className='bigcart' />
   <h2>No items yet!</h2>

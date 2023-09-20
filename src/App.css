@@ -399,7 +399,7 @@ input:focus{
     display: flex ;
     flex-direction: column;
   background-color: var(--nav-text-color);
-   
+   width: 170px;
     transition: top 0.3s;
     border-radius: 10px;
     transition: 0.5s;

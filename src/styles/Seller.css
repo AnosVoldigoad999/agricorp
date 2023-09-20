@@ -231,6 +231,7 @@
   .cats{
     display: flex;
     flex-direction: column;
+    width: fit-content;
     border-radius: 10px;
     margin-bottom: 10px;
   }
@@ -260,7 +261,7 @@
     background-color: var(--background);
     border-radius: 20px;
     padding: 10px;
-    margin: 2%;
+   
     color: var(--logo); 
   }
 
@@ -398,7 +399,6 @@
     background-color: var(--logo);
     border-radius: 20px;
     padding: 10px;
-    margin: 2%;
     color: var(--background); 
   }
 
@@ -422,6 +422,9 @@
     width: 95vw;
   }
 
+
+
+
  }
 
 
@@ -437,6 +440,18 @@
 
 
 
+ }
+
+ @media (max-width:400px){
+
+  .cats{
+    margin: 0 auto;
+  }
+
+  .cats1, .cats2{
+  display: grid;
+  grid-template-columns: 50% 50% ;
+  }
  }
 
   /*mobile queries*/

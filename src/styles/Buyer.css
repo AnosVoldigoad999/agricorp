@@ -266,7 +266,9 @@
       display: none;
     }
 
-    
+    .body .godmenu .menuitems{
+      width: 170px;
+    }
 
    
 

@@ -1,5 +1,6 @@
 import {CgProfile} from 'react-icons/cg'
 import {PiGearSixFill, PiShoppingCartFill} from 'react-icons/pi'
+import {AiOutlineMenu} from 'react-icons/ai'
 import {IoIosExit} from 'react-icons/io'
 import '../styles/Profile.css'
 import { Link } from 'react-router-dom'
@@ -13,6 +14,17 @@ export default function BuyerProfile(){
             <Link to='/' className='links'><li id='logout'><IoIosExit className='proficon' />Log out</li></Link>
         </ul>
     </div>
+    <div className='godmenu'>
+       <input type="checkbox" id="menucheck" />
+          <label htmlFor="menucheck" id="menubutton" ><AiOutlineMenu className="menuicon" /></label>
+       <div className="menuitems">
+       <ul>
+           <Link to='/buyerprofile' className='link'><li><PiGearSixFill className='proficon'/>Settings</li></Link>
+            <Link to='/cart' className='link'><li><PiShoppingCartFill className='proficon' />Cart</li></Link>
+            <Link to='/' className='link'><li id='logout'><IoIosExit className='proficon' />Log out</li></Link>
+        </ul>
+        </div>
+       </div>
     <div className="main">
         <CgProfile className='pfp' />
         <h2 className='h2'>Buyer Name</h2>

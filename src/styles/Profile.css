@@ -37,6 +37,7 @@
     height: 100%;
     
   }
+  
 
   .sidenav ul li{
     padding: 20px 49px;
@@ -102,3 +103,14 @@
   }
 
   /*active*/
+
+  @media (max-width:600px){
+    .grid{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: none;
+      border: 1px solid var(--logo);
+      height: 70%;
+      width: 100%;
+    }
+  }

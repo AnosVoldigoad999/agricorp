@@ -242,7 +242,9 @@
         display: none;
       }
   
-    
+    .suggestions{
+      display: none;
+    }
       
 
       /*profile*/

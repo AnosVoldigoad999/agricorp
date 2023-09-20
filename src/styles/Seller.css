@@ -400,6 +400,10 @@
 
  @media (max-width:900px) {
   
+  .sellermain{
+    margin-top: 10%;
+  }
+
   .mainlistings{
     grid-template-columns: 50% 50%;
   }

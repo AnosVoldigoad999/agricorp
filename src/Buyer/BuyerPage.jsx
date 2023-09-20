@@ -116,7 +116,7 @@ export default function BuyerHome ({goods, setGoods}){
   <AiOutlineShop className='bigcart' />
       <h2>No items yet!</h2>
   </main>
-  <span className="suggestions">
+  <div className="suggestions">
   <span>Try using terms such as</span>
       <ul>
         <li>Vegetables</li>
@@ -129,7 +129,7 @@ export default function BuyerHome ({goods, setGoods}){
         <li>Beverages</li>
         <li>Other</li>
       </ul>
-      </span>
+      </div>
   </>
   }
   </>

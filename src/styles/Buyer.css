@@ -178,8 +178,9 @@
   }
 
   .suggestions{
-    position: relative;
-    left: 43%;
+    margin: 0 auto;
+    width: fit-content;
+
   }
 
   /*active*/
@@ -242,9 +243,7 @@
         display: none;
       }
   
-    .suggestions{
-      display: none;
-    }
+  
       
 
       /*profile*/

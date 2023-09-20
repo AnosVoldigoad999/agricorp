@@ -1,5 +1,5 @@
 import {CgProfile} from 'react-icons/cg'
-import {AiOutlineShop} from 'react-icons/ai'
+import {AiOutlineShop, AiOutlineMenu} from 'react-icons/ai'
 import {PiGearSixFill, PiShoppingCartFill} from 'react-icons/pi'
 import {IoIosExit} from 'react-icons/io'
 import '../styles/Profile.css'
@@ -15,6 +15,18 @@ export default function SellerProfile(){
             <Link to='/' className='links'><li id='logout'><IoIosExit className='proficon' />Log out</li></Link>
         </ul>
     </div>
+    <div className='godmenu'>
+       <input type="checkbox" id="menucheck" />
+          <label htmlFor="menucheck" id="menubutton" ><AiOutlineMenu className="menuicon" /></label>
+       <div className="menuitems">
+       <ul>
+           <Link to='/sellerprofile' className='link'><li><PiGearSixFill className='proficon'/>Settings</li></Link>
+           <Link to='/listings' className='link'><li><AiOutlineShop className='proficon' />Listings</li></Link>
+           <Link to='/sellerpage' className='link'><li><AiOutlineShop className='proficon' />My Home</li></Link>
+            <Link to='/' className='link'><li id='logout'><IoIosExit className='proficon' />Log out</li></Link>
+        </ul>
+        </div>
+       </div>
     <div className="main">
         <CgProfile className='pfp' />
         <h2>Seller Name</h2>

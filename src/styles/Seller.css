@@ -409,6 +409,10 @@
     grid-template-columns: 50% 50%;
   }
 
+  .listings{
+    grid-template-columns: 50% 50%;
+  }
+
  }
 
 
@@ -416,6 +420,11 @@
  .mainlistings{
   grid-template-columns: 100%;
  }
+
+ .listings{
+  grid-template-columns: 100%;
+ }
+
  }
 
   /*mobile queries*/

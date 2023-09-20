@@ -332,6 +332,10 @@ input:focus{
     justify-content: center;
     border-radius: 20px;
   }
+
+  .choosing .card h3{
+    font-size: 1rem;
+  }
   
 /*register*/
   

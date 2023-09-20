@@ -220,6 +220,16 @@
         margin-right: 25%;
       }
 
+      /*profile*/
+      .main .h1{
+        font-size: 100%;
+      }
+  
+      .main p{
+        font-size: 85%;
+      }
+
+      /*profile*/
 
   }
 
@@ -256,13 +266,7 @@
       display: none;
     }
 
-    .main .h1{
-      font-size: 100%;
-    }
-
-    .main p{
-      font-size: 85%;
-    }
+    
 
    
 

@@ -251,7 +251,20 @@
     .logo h1{
       font-size: 1.2rem;
     }
+    /*profile*/
+    .sidenav{
+      display: none;
+    }
 
+    .main .h1{
+      font-size: 1.2rem;
+    }
+
+    .main p{
+      font-size: 85%;
+    }
+
+    /*profile*/
   }
 
 

@@ -309,7 +309,31 @@ input:focus{
     display: none;
   }
 
-
+  /*register*/
+  .choosing{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+  }
+  
+  .card{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+    background-color: var(--nav-text-color);
+    width: 50%;
+    color: var(--background);
+    justify-content: center;
+    border-radius: 20px;
+  }
+  
+/*register*/
   
  
   .menuicon{

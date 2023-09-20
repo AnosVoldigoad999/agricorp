@@ -446,11 +446,13 @@
 
   .cats{
     margin: 0 auto;
+    
   }
 
   .cats1, .cats2{
   display: grid;
   grid-template-columns: 50% 50% ;
+  column-gap: 20%;
   }
  }
 

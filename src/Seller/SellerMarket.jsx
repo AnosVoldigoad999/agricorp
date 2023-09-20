@@ -1,4 +1,4 @@
-import {AiOutlineShop} from 'react-icons/ai'
+import {AiOutlineShop, AiOutlineMenu} from 'react-icons/ai'
 import {CgProfile} from 'react-icons/cg'
 import {PiGearSixFill, PiShoppingCartFill} from 'react-icons/pi'
 import {BiArrowBack} from 'react-icons/bi'
@@ -74,6 +74,18 @@ export default function SellerMarket ({
             <Link to='/' className='links'><li id='logout'><IoIosExit className='proficon' />Log out</li></Link>
         </ul>
     </div>
+    <div className='godmenu'>
+       <input type="checkbox" id="menucheck" />
+          <label htmlFor="menucheck" id="menubutton" ><AiOutlineMenu className="menuicon" /></label>
+       <div className="menuitems">
+       <ul>
+           <Link to='/sellerprofile' className='link'><li><PiGearSixFill className='proficon'/>Settings</li></Link>
+           <Link to='/listings' className='link'><li><AiOutlineShop className='proficon' />Listings</li></Link>
+           <Link to='/sellerpage' className='link'><li><AiOutlineShop className='proficon' />My Home</li></Link>
+            <Link to='/' className='link'><li id='logout'><IoIosExit className='proficon' />Log out</li></Link>
+        </ul>
+        </div>
+       </div>
     {isEditing?<EditItems name={name} 
     setIsEditing={setIsEditing}
     setName={setName}

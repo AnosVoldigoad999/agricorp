@@ -29,22 +29,22 @@ export default function SellerProfile(){
        </div>
     <div className="main">
         <CgProfile className='pfp' />
-        <h2>Seller Name</h2>
+        <h2 className='h2'>Seller Name</h2>
         <div className='grid'>
            <div className='details'>
-            <h1>Seller Name</h1>
+            <h1 className='h1'>Seller Name</h1>
             <p>sellerername@gmail.com</p>
            </div>
            <div className='address'>
-           <h1>Farm Address</h1>
+           <h1 className='h1'>Farm Address</h1>
             <p>99, a particular street, some bustop, some town, some city, some country</p>
             </div>
             <div className='balance'>
-            <h1>Account balance</h1>
+            <h1 className='h1'>Account balance</h1>
             <p>#100</p>
             </div>
             <div className='newsletter'>
-            <h1>Subcribed newsletters</h1>
+            <h1 className='h1'>Subcribed newsletters</h1>
             <p>All of them</p>
             </div>
         </div>

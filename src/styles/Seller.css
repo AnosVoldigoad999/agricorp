@@ -432,7 +432,6 @@
     color: var(--logo);
     position: relative;
     left: 10%;
-    bottom: 200px;
     padding: 5px 10px;
     border-radius: 10px;
     z-index: 5;

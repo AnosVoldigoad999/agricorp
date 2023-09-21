@@ -11,6 +11,7 @@ export default function BuyerProfile(){
         <ul>
            <Link to='/buyerprofile' className='links'><li><PiGearSixFill className='proficon'/>Settings</li></Link>
             <Link to='/cart' className='links'><li><PiShoppingCartFill className='proficon' />Cart</li></Link>
+            <Link to='/buyerpage' className='links'><li><AiFillHome className='proficon' />My Home</li></Link>
             <Link to='/' className='links'><li id='logout'><IoIosExit className='proficon' />Log out</li></Link>
         </ul>
     </div>

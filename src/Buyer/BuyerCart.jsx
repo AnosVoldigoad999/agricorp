@@ -1,6 +1,6 @@
 import {CgProfile} from 'react-icons/cg'
 import {PiGearSixFill, PiShoppingCartFill} from 'react-icons/pi'
-import {AiOutlineMenu} from 'react-icons/ai'
+import {AiOutlineMenu, AiFillHome} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import {IoIosExit} from 'react-icons/io'
 import '../styles/Profile.css'
@@ -33,6 +33,7 @@ return<>
         <ul>
         <Link to='/buyerprofile' className='links'><li><PiGearSixFill className='proficon'/>Settings</li></Link>
             <Link to='/cart' className='links'><li><PiShoppingCartFill className='proficon' />Cart</li></Link>
+            <Link to='/buyerpage' className='links'><li><AiFillHome className='proficon' />My Home</li></Link>
             <Link to='/' className='links'><li id='logout'><IoIosExit className='proficon' />Log out</li></Link>
         </ul>
     </div>
@@ -43,6 +44,7 @@ return<>
        <ul>
            <Link to='/buyerprofile' className='link'><li><PiGearSixFill className='proficon'/>Settings</li></Link>
             <Link to='/cart' className='link'><li><PiShoppingCartFill className='proficon' />Cart</li></Link>
+            <Link to='/buyerpage' className='link'><li><AiFillHome className='proficon' />My Home</li></Link>
             <Link to='/' className='link'><li id='logout'><IoIosExit className='proficon' />Log out</li></Link>
         </ul>
         </div>

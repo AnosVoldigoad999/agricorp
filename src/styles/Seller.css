@@ -344,7 +344,10 @@
 /*seller footer*/
 
 .sellerfooter{
-  display: none;
+ position: relative;
+ display: none;
+  left: 80%;
+  bottom: 50px;
 }
 
 .sellerfootervisible{
@@ -422,7 +425,18 @@
     width: 95vw;
   }
 
-
+  .sellerfootervisible{
+    background-color: var(--nav-text-color);
+    width: fit-content;
+    height: fit-content;
+    color: var(--logo);
+    position: relative;
+    left: 10%;
+    bottom: 200px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    z-index: 5;
+  }
 
 
  }

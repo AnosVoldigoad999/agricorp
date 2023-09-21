@@ -30,7 +30,7 @@ export default function BeverageSeller(
         quantity:good.quantity,
         category:good.category,
         link:good.link,
-        id:good.id
+        id:Math.random()
       }]
     })
   

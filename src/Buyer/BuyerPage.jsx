@@ -135,7 +135,7 @@ export default function BuyerHome ({goods, setGoods}){
   </>
 return<>
         <nav>
-        <Link to="/" className='logo'><h1>Agricorp</h1></Link>
+        <Link to="/buyerpage" className='logo'><h1>Agricorp</h1></Link>
         <input placeholder="search by category..." className="searchbar" value={isSearching} onChange={e=>setIsSearching(e.target.value)} />
         <input placeholder="search by category..." className="mobilesearchbar" value={isSearching} onChange={e=>setIsSearching(e.target.value)} />
           <div className='logindiv'>

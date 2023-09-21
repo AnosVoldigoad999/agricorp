@@ -9,7 +9,7 @@ export default function SellerHome ({
 }){
 return<>
         <nav>
-        <Link to="/" className='logo'><h1>Agricorp</h1></Link>
+        <Link to="/sellerpage" className='logo'><h1>Agricorp</h1></Link>
           <div className='logindiv'>
           <Link to="/sellerpage" className='login'><h4>Home</h4></Link>
           <Link to="#" className='login'><h4>About Us</h4></Link>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Seeds (){
     return<>
      <nav>
-        <Link to="/" className='logo'><h1>Agricorp</h1></Link>
+        <Link to="/buyerpage" className='logo'><h1>Agricorp</h1></Link>
           <div className='logindiv'>
           <Link to="/buyerpage" className='login'><h4>Home</h4></Link>
           <Link to="#" className='login'><h4>About Us</h4></Link>

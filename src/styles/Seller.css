@@ -172,7 +172,7 @@
   .seeds{
     height: 80%;
     width: 100%;
-    content: url(../public/flaxseed-close-up-royalty-free-image-1636392298.jpg);
+    content: url(../../public/seeds.jpg);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
@@ -195,7 +195,7 @@
   .other{
     height: 80%;
     width: 100%;
-    content: url(../public/otheragain.webp);
+    content: url(../../public/other.jpg);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
@@ -253,7 +253,7 @@
     background-color: var(--logo);
     border-radius: 20px;
     padding: 10px;
-    margin: 2%;
+   
     color: var(--background);
   }
 

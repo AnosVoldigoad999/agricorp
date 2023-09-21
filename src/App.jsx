@@ -70,11 +70,32 @@ export default function App(){
   const [goods, setGoods] = useState(()=>{
     const storedGoods = JSON.parse(localStorage.getItem('goods'))
     if (!storedGoods){
-      return []
+      return [
+      {
+        name: "Jute",
+        id: Math.random(),
+        link: "https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/11/saluyot-jute-leaves-1296x728-header.jpg?w=1155&h=1528" ,
+        price: 10000,
+        quantity: "100kg",
+        category:"Vegetables"
+    },
+    {
+      name: "Watermelon seeds",
+      id: Math.random(),
+      link: "https://www.thespruceeats.com/thmb/Twl-rxMSNzm-lvVnZ1wMsatS_xM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/snack-time-640150613-5887d57d5f9b58bdb38ea501.jpg" ,
+      price: 5000,
+      quantity: "2 bags",
+      category:"Seeds"
+  }
+    ]
     } else{
       return storedGoods
     }
   })
+  
+
+
+  
 useEffect(
   ()=>{
     localStorage.setItem('goods', JSON.stringify(goods))

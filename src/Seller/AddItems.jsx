@@ -116,6 +116,7 @@ export default function AddItems ({productName,
                         ]
                     }
                 )
+            
                 setValid(true)
                 console.log(valid)
           }   

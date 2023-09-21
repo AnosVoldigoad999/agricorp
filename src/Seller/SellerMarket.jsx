@@ -48,6 +48,7 @@ export default function SellerMarket ({
         setQuantity(good.quantity)
         setPrice(good.price)
         setId(good.id)
+        setCategory(good.category)
         console.log(id)
     }
 
@@ -60,6 +61,7 @@ export default function SellerMarket ({
             goods[i].quantity=quantity
             goods[i].category=category
             goods[i].link=link
+            localStorage.setItem('goods', JSON.stringify(goods))
         }
        }
        setIsEditing(false)

@@ -1,6 +1,6 @@
 import {CgProfile} from 'react-icons/cg'
 import {PiGearSixFill, PiShoppingCartFill} from 'react-icons/pi'
-import {AiOutlineMenu} from 'react-icons/ai'
+import {AiOutlineMenu, AiFillHome} from 'react-icons/ai'
 import {IoIosExit} from 'react-icons/io'
 import '../styles/Profile.css'
 import { Link } from 'react-router-dom'
@@ -21,6 +21,7 @@ export default function BuyerProfile(){
        <ul>
            <Link to='/buyerprofile' className='link'><li><PiGearSixFill className='proficon'/>Settings</li></Link>
             <Link to='/cart' className='link'><li><PiShoppingCartFill className='proficon' />Cart</li></Link>
+            <Link to='/buyerpage' className='link'><li><AiFillHome className='proficon' />My Home</li></Link>
             <Link to='/' className='link'><li id='logout'><IoIosExit className='proficon' />Log out</li></Link>
         </ul>
         </div>

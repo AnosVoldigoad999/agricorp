@@ -1,4 +1,5 @@
 import {CgProfile} from 'react-icons/cg'
+import {AiOutlineMenu} from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 export default function Veggies (){
     return<>
@@ -11,7 +12,21 @@ export default function Veggies (){
           <Link to="#" className='login'><h4>Contact Us</h4></Link> 
           <Link to='/buyerprofile' className="profilelink"><CgProfile className="profile" /></Link>
 </div>
-        </nav> 
+        </nav>
+        <div className='godmenu'>
+       <input type="checkbox" id="menucheck" />
+          <label htmlFor="menucheck" id="menubutton" ><AiOutlineMenu className="menuicon" /></label>
+       <div className="menuitems">
+          <ul>
+          <Link to='/buyerprofile' className="link"><CgProfile className="profile" /></Link>
+            <Link className="link" to='/buyerpage'><li>Home</li></Link>
+            <Link className="link"><li>About us</li></Link>
+            <Link className="link"><li>Services</li></Link>
+            <Link className="link"><li>Contact us</li></Link>
+          </ul>
+        </div>
+       </div>
+       <br/>
         <main>
             <h1>Our top vendors!</h1>
             <div className="sellers">

@@ -1,4 +1,4 @@
-import {AiOutlineShop} from 'react-icons/ai'
+import {AiOutlineShop, AiOutlineMenu} from 'react-icons/ai'
 import {CgProfile} from 'react-icons/cg'
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
@@ -51,6 +51,20 @@ setTimeout(()=>{
           <Link to='/buyerprofile' className="profilelink"><CgProfile className="profile" /></Link>
 </div>
         </nav>
+        <div className='godmenu'>
+       <input type="checkbox" id="menucheck" />
+          <label htmlFor="menucheck" id="menubutton" ><AiOutlineMenu className="menuicon" /></label>
+       <div className="menuitems">
+          <ul>
+          <Link to='/buyerprofile' className="link"><CgProfile className="profile" /></Link>
+            <Link className="link" to='/buyerpage'><li>Home</li></Link>
+            <Link className="link"><li>About us</li></Link>
+            <Link className="link"><li>Services</li></Link>
+            <Link className="link"><li>Contact us</li></Link>
+          </ul>
+        </div>
+       </div>
+       <br/>
             <div className="sellermain">
             <h1>Seller Inventory</h1>
             <br />
